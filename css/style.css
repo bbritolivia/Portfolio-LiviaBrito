@@ -1,7 +1,10 @@
 /*
 Colors used:
-Primary Color (dark blue): #2C2E43;
-Secondary Color (light blue): #7FB7E3;
+Dark blue: #2C2E43;
+Dark green: #6e6539;
+Light blue: #7FB7E3;
+Light green: #7D7A42;
+Beige: #e3c9ab;
 */
 body {
   background-color: #ffffff;
@@ -55,4 +58,58 @@ a:hover,
 a:focus {
   color: #2C2E43;
   text-decoration: underline;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #2C2E43;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7FB7E3; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #2C2E43;
+  text-transform: uppercase;
+  border: 2px solid #2C2E43;
+}
+
+.button.contact:hover {
+  background-color: #2C2E43;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  background-color: #2C2E43;
+  color: #ffffff;
+}
+
+.button.cv {
+  background-color: transparent;
+  color: #7D7A42;
+  border: 2px solid #7D7A42;
+}
+
+.button.cv:hover {
+  background-color: #7D7A42;
+  color: #ffffff;
+}
+
+.button.cv:active {
+  background-color: #7D7A42;
+  color: #ffffff;
 }
