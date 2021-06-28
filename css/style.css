@@ -6,6 +6,11 @@ Light blue: #7FB7E3;
 Light green: #7D7A42;
 Beige: #e3c9ab;
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -79,6 +84,12 @@ a:focus {
 .button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button:visited {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  color: #ffffff
 }
 
 .button.contact {
