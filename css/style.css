@@ -126,7 +126,61 @@ a:focus {
 }
 
 /* Layout styling */
+main {
+  padding-top: 133px;
+}
+
+header {
+  background-color: #e3c9ab;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 1px 6px 15px 0px rgba(89, 89, 89, 0.6);
+  position: fixed;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2C2E43;
+}
+
+nav > ul > li > a:visited {
+  color: #2C2E43;
+}
 
 .container {
   padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+#hero {
+  background-color: #e3c9ab;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 250px;
 }
