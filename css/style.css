@@ -124,3 +124,9 @@ a:focus {
   background-color: #7D7A42;
   color: #ffffff;
 }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
