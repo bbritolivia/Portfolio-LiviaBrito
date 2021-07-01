@@ -126,6 +126,7 @@ a:focus {
 }
 
 /* Layout styling */
+
 main {
   padding-top: 133px;
 }
@@ -183,4 +184,22 @@ nav > ul > li > a:visited {
 
 .logo {
   max-width: 250px;
+}
+
+.social {
+  display: inline-block;
+}
+
+#About {
+  padding-top: 20px; padding-left: 15px; padding-right: 15px;
+  text-align: center;
+}
+
+#contact {
+  padding: 0 15px;
+}
+
+#dailymeals {
+  padding-top: 20px; padding-left: 15px; padding-right: 15px;
+  text-align: center;
 }
