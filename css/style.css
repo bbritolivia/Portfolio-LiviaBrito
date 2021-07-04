@@ -39,8 +39,9 @@ h3 {
 }
 h4 {
   font-size: 1.35em;
-  font-weight: 200;
+  font-weight: 400;
 }
+
 img {
   width: 100%;
 }
@@ -175,6 +176,14 @@ nav > ul > li > a:visited {
   text-align: center; /* Centers text */
 }
 
+#hero h4 {
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
 #hero {
   background-color: #e3c9ab;
   padding: 20px 0;
@@ -211,4 +220,88 @@ nav > ul > li > a:visited {
 #dailymeals {
   padding-top: 20px; padding-left: 15px; padding-right: 15px;
   text-align: center;
+}
+#profilepic {
+  max-width: 300px;
+}
+
+#my-story <p> {
+  text-align: center;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  main {
+    padding-top: 99px;
+  }
+  #hero span {
+    display: block;
+  }
+  body {
+    font-size: 18px;
+  }
+  #profilepic {
+    max-width: 400px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #projects h3 {
+    margin-top: 0;
+  }
+  #skills-tools h3 {
+    margin-top: 0;
+  }
+  #skills-tools h2 {
+    text-align: center;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  body {
+    font-size: 20px;
+  }
+  #profilepic {
+    float: right;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
