@@ -71,6 +71,7 @@ a:focus {
   background-color: #2C2E43;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #7FB7E3; /* width of the border, type, color */
@@ -229,6 +230,12 @@ nav > ul > li > a:visited {
   text-align: center;
 }
 
+#animation svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -303,5 +310,35 @@ X-large devices (1440px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  }
 }
+
+/* animation */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
