@@ -197,16 +197,14 @@ nav > ul > li > a:visited {
 }
 
 .social {
-  text-align: center;
+  list-style: none;
 }
 
-.social a {
-  display: inline-block;
-}
-
-.social svg {
+.social li {
+  list-style: none;
+  max-height: 50px;
   max-width: 50px;
-  height: auto;
+  display: inline-block;
 }
 
 #About {
