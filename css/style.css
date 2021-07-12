@@ -130,13 +130,12 @@ a:focus {
 /* Layout styling */
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 header {
   background-color: #e3c9ab;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 1px 6px 15px 0px rgba(89, 89, 89, 0.6);
   position: fixed;
   width: 100%;
@@ -145,11 +144,6 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  width: 100%;
-}
-
-nav > ul > li {
-  display: inline-block;
 }
 
 nav > ul > li > a {
@@ -161,6 +155,39 @@ nav > ul > li > a {
 
 nav > ul > li > a:visited {
   color: #2C2E43;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #2C2E43;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .container {
@@ -193,7 +220,7 @@ nav > ul > li > a:visited {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .social {
@@ -234,19 +261,35 @@ nav > ul > li > a:visited {
   height: auto;
 }
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+  .logo {
+    max-width: 250px;
   }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+  nav > ul {
+  margin: 1em 0;
+}
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   main {
     padding-top: 99px;
   }
