@@ -200,6 +200,16 @@ nav > ul > li > a:visited {
 
 #projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
+.Process {
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#AboutSection {
+  border-bottom: 1px solid #4a4a4a;
+  margin: auto;
+  max-width: 1200px;
+}
+
 #hero h1 {
   text-align: center; /* Centers text */
 }
@@ -249,6 +259,7 @@ nav > ul > li > a:visited {
 }
 #profilepic {
   max-width: 300px;
+  margin: auto;
 }
 
 #my-story <p> {
@@ -341,6 +352,10 @@ Large devices (1024px or larger)
   #profilepic {
     float: right;
   }
+  #About {
+    text-align: left;
+    padding-left: 0;
+  }
 }
 
 /* ==============================
@@ -353,6 +368,7 @@ X-large devices (1440px or larger)
   margin-right: auto;
   }
 }
+
 
 /* animation */
 
