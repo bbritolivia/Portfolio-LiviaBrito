@@ -144,6 +144,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -168,7 +169,7 @@ nav > ul > li > a:visited {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 8px;
   font-size: 20px;
   padding-right: 0;
 }
