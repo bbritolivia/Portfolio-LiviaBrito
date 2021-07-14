@@ -352,6 +352,7 @@ Large devices (1024px or larger)
   }
   #profilepic {
     float: right;
+    padding-top: 60px;
   }
   #About {
     text-align: left;
