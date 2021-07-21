@@ -1,28 +1,31 @@
 /*
 Colors used:
-Dark blue: #2C2E43;
+Dark blue: #2c2e43;
 Dark green: #6e6539;
-Light blue: #7FB7E3;
-Light green: #7D7A42;
+Light blue: #7fb7e3;
+Light green: #7d7a42;
 Beige: #e3c9ab;
 */
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px; /* Sets the font size to 16px */
   font-weight: 400; /* Sets the font weight to 400 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #2C2E43;
+  color: #2c2e43;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 600;
@@ -37,6 +40,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -47,40 +51,45 @@ img {
 }
 
 a {
-  color: #7FB7E3;
+  color: #7fb7e3;
   text-decoration: none; /* No underlining */
 }
+
 a:hover {
-  color: #2C2E43;
+  color: #2c2e43;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 a:visited { /* visited link */
   color: #7d7a42;
 }
+
 a:active { /* selected link */
   color: #994c30;
 }
+
 a:hover,
 a:focus {
-  color: #2C2E43;
+  color: #2c2e43;
   text-decoration: underline;
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #2C2E43;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #2c2e43;
+  color: #fff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #7FB7E3; /* width of the border, type, color */
+  border-bottom: 2px solid #7fb7e3; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-.label{
+
+.label {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #2C2E43;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #2c2e43;
+  color: #fff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -100,40 +109,40 @@ a:focus {
 .button:visited {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  color: #ffffff
+  color: #fff;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #2C2E43;
+  color: #2c2e43;
   text-transform: uppercase;
-  border: 2px solid #2C2E43;
+  border: 2px solid #2c2e43;
 }
 
 .button.contact:hover {
-  background-color: #2C2E43;
-  color: #ffffff;
+  background-color: #2c2e43;
+  color: #fff;
 }
 
 .button.contact:active {
-  background-color: #2C2E43;
-  color: #ffffff;
+  background-color: #2c2e43;
+  color: #fff;
 }
 
 .button.cv {
   background-color: transparent;
-  color: #7D7A42;
-  border: 2px solid #7D7A42;
+  color: #7d7a42;
+  border: 2px solid #7d7a42;
 }
 
 .button.cv:hover {
-  background-color: #7D7A42;
-  color: #ffffff;
+  background-color: #7d7a42;
+  color: #fff;
 }
 
 .button.cv:active {
-  background-color: #7D7A42;
-  color: #ffffff;
+  background-color: #7d7a42;
+  color: #fff;
 }
 
 /* Layout styling */
@@ -145,7 +154,7 @@ main {
 header {
   background-color: #e3c9ab;
   padding: 10px 0 4px;
-  box-shadow: 1px 6px 15px 0px rgba(89, 89, 89, 0.6);
+  box-shadow: 1px 6px 15px 0 rgba(89, 89, 89, 0.6);
   position: fixed;
   width: 100%;
 }
@@ -160,18 +169,19 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #2C2E43;
+  color: #2c2e43;
 }
 
 nav > ul > li > a:visited {
-  color: #2C2E43;
+  color: #2c2e43;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -183,20 +193,21 @@ nav > ul > li > a:visited {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #2C2E43;
+  border-top: 1px solid #2c2e43;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -208,7 +219,10 @@ nav > ul > li > a:visited {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 .Process {
   border-bottom: 1px solid #4a4a4a;
@@ -255,7 +269,9 @@ nav > ul > li > a:visited {
 }
 
 #About {
-  padding-top: 20px; padding-left: 15px; padding-right: 15px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
 }
 
@@ -264,15 +280,18 @@ nav > ul > li > a:visited {
 }
 
 #dailymeals {
-  padding-top: 20px; padding-left: 15px; padding-right: 15px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
 }
+
 #profilepic {
   max-width: 300px;
   margin: auto;
 }
 
-#my-story <p> {
+#my-story p {
   text-align: center;
 }
 
@@ -282,7 +301,6 @@ nav > ul > li > a:visited {
   height: auto;
 }
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -291,56 +309,72 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   .logo {
     max-width: 250px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
   nav > ul {
-  margin: 1em 0;
-}
+    margin: 1em 0;
+  }
+
   nav > ul > li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   main {
     padding-top: 99px;
   }
+
   #hero span {
     display: block;
   }
+
   body {
     font-size: 18px;
   }
+
   #profilepic {
     max-width: 400px;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
     padding: 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
   #projects h3 {
     margin-top: 0;
   }
+
   #skills-tools h3 {
     margin-top: 0;
   }
+
   #skills-tools h2 {
     text-align: center;
   }
@@ -353,16 +387,20 @@ Large devices (1024px or larger)
   .col-lg-7 {
     width: 60%;
   }
+
   .col-lg-5 {
     width: 40%;
   }
+
   body {
     font-size: 20px;
   }
+
   #profilepic {
     float: right;
     padding-top: 60px;
   }
+
   #About {
     text-align: left;
     padding-left: 0;
@@ -374,19 +412,18 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
 
 /* animation */
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
@@ -394,8 +431,8 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -403,8 +440,8 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
